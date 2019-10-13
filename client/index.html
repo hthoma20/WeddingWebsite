@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Harry and Daylin's Wedding</title>
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+	<body>
+		
+		<div class="header">
+			<img src="./images/corner_flower.png" alt="Hanging flowers" id="top_corner_flowers"/>
+			<img src="./images/corner_flower2.png" alt="Hanging flowers" id="bottom_corner_flowers"/>
+			<img src="./images/hanging_greens.jpg" alt="Hanging greens" class="hanging_greens"/>
+			Welcome to Harry and Daylin's wedding website
+			<img src="./images/hanging_greens.jpg" alt="Hanging greens" class="hanging_greens"/>
+		</div>
+		
+		
+		<div id="tab_bar">
+			<span class="tab_button" onClick="changeTab('home_tab')">
+				Home
+			</span>
+			<span class="tab_button" onClick="changeTab('rsvp_tab')">
+				RSVP
+			</span>
+			<span class="tab_button" onClick="changeTab('venue_tab')">
+				Venue
+			</span>
+			<span class="tab_button" onClick="changeTab('song_tab')">
+				Music
+			</span>
+		</div>
+		
+		<div id="tab_area">
+			<!-- Home tab -->
+			<div id="home_tab" class="tab_content">
+				<p>
+					We are so excited to be getting married! Thank you for visiting our
+					website. If you came here to RSVP, head to the RSVP tab. If you came for
+					info on venue, head to the Venue tab.
+				</p>
+			</div>
+			
+			<!-- RSVP tab -->
+			<div id="rsvp_tab" class="tab_content">
+				<form id='rsvp_form'>
+					<label for="first_name_input">First Name</label>
+					<input id="first_name_input">
+					<label for="last_name_input">Last Name</label>
+					<input id="last_name_input">
+					<input type="submit" value="enter">
+				</form>
+			</div>
+			
+			<!-- Venue tab -->
+			<div id="venue_tab" class="tab_content">
+				<table>
+					<tr>
+						<th>Venue</th>
+						<td>24 Freemont</td>
+					</tr>
+					<tr>
+						<th>Adress</th>
+						<td>
+							2393 NE Fremont St, Suite C <br>
+							Portland, OR 97212
+						</td>
+					</tr>
+					<tr>
+						<th>Website</th>
+						<td><a href="https://www.24fremont.com">24freemont.com</a></td>
+					</tr>
+				</table>
+			</div>
+			
+			<!-- Song suggestion tab -->
+			<div id="song_tab" class="tab_content">
+				
+			</div>
+		</div>
+		
+		<script src="./scripts/jQuery.min.js"></script>
+		<script src="./scripts/script.js"></script>
+	</body>
+<html>
