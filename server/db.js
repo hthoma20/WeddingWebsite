@@ -6,7 +6,22 @@ var con = mysql.createConnection({
   password: "daylinharry"
 });
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+module.exports.query= function(query){
+	return new Promise(resolve, reject => {
+		con.connect(function(err) {
+			if (err){
+				reject(err);
+			}
+			
+			console.log("Connected!");
+
+			con.query(query, function (err, result) {
+				if (err){
+					reject(err);
+				}
+
+				resolve(result);
+			});
+		});
+	});
+}
