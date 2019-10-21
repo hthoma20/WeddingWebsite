@@ -1,0 +1,44 @@
+#gallery_content {
+	width: 80%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 1%;
+}
+
+.gallery_photo {
+	cursor: pointer;
+}
+
+.vertical {
+	width: 25%;
+}
+
+.horizontal {
+	width: 50%;	
+}
+
+.selected {
+	display: block;
+	position: fixed;
+	
+	border: 3px solid black;
+}
+
+.selected.horizontal {	
+	top: 5%;
+	bottom: 5%;
+	height: 90%;
+	
+	width: auto;
+}
+
+.selected.vertical {
+	top: 5%;
+	bottom: 5%;
+	height: 90%;
+	
+	width: auto;
+}
+

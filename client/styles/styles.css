@@ -1,0 +1,135 @@
+@font-face {
+	font-family: 'Mon Voir';
+	src: url('../fonts/MonVoir.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Segan';
+	src: url('../fonts/Segan-Light.woff') format('woff');
+}
+
+body {
+	background-color: #f5f5f2;
+	text-align: center;
+}
+
+/* The main header with corner roses and "harry + daylin" */
+.header {
+	margin-top: 7%;
+	
+	font-family: 'Mon Voir', cursive;
+	font-size: 500%;
+}	
+
+#tab_bar {
+	background-color: none;
+	
+	padding: 1%;
+	margin-top: 1%;
+}
+
+.tab_button {
+	font-family: Segan, Sans-Serif;
+	font-size: 125%;
+	
+	/* top right bottom left */
+	padding: 1% 2% 1% 2%;
+	
+	margin: 1%;
+	
+	background-color: none;
+	
+	cursor: pointer;
+	
+	text-decoration: none;
+	
+	color: black;
+	
+}
+
+.tab_button:hover {
+	background-color: #efefe8;
+}
+
+.tab_selected {
+	text-decoration: underline;
+}
+
+/* The roses */
+#tl_corner_flowers {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 35%;
+	
+	z-index: -1;
+}
+
+#tr_corner_flowers {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	width: 35%;
+	
+	z-index: -1;
+	
+}
+
+
+#main_photo {
+	margin-top: 1%;
+	margin-bottom: 3%;
+	width: 65%;
+}
+
+
+#details {
+	margin-top: 0%;
+	padding: 0px;
+}
+
+.branch_divider {
+	width: 30%;
+	
+	margin-top: -30px;
+}
+
+h1 {
+	font-family: 'Mon Voir', cursive;
+	
+	font-size: 350%;
+	
+	font-weight: normal;
+	
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Segan', Sans-Serif;
+	
+	font-size: 200%;
+	
+	font-weight: normal;
+	
+	text-transform: uppercase;
+	
+	margin-bottom: 0%;
+	margin-top: 1%;
+}
+
+#party_details {
+	margin-top: 2.5%;
+}
+
+p {
+	font-family: 'Segan', Sans-Serif;
+	
+	font-size: 130%;
+	
+	font-variant: small-caps;
+	
+	margin: .5%;
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Harry and Daylin's Wedding</title>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/rsvp.css">
+	</head>
+	<body>
+		<div class="header">
+			<img src="./images/tl_corner_rose.png" alt="Roses" id="tl_corner_flowers"/>
+			<img src="./images/tr_corner_rose.png" alt="Roses" id="tr_corner_flowers"/>
+			Harry + Daylin
+		</div>
+
+		<div id="tab_bar">
+			<a class="tab_button" href="./">Wedding</a>
+
+			<a class="tab_button tab_selected" href="./rsvp.html">RSVP</a>
+			
+			<a class="tab_button" href="./guests.html">Guest Accomodations</a>
+			
+			<a class="tab_button" href="./registry.html">Registry</a>
+			
+			<a class="tab_button" href="./gallery.html">Gallery</a>
+		</div>
+		
+		<div id="rsvp_content">
+			<div id="rsvp_heading">
+				See you there?
+			</div>
+			
+			<div id="group_search">
+				
+				<form id='search_form'>
+					<label for="name_input">First or Last Name</label>
+					<input id="name_input">
+					<input type="submit" value="enter">
+				</form>
+			
+			
+				<div id="result"></div>
+			</div>
+				
+			<div id="rsvp_form"></div>
+		</div>
+		
+		<script src="./scripts/jQuery.min.js"></script>
+		<script src="../scripts/rsvp.js"></script>
+	</body>
+<html>

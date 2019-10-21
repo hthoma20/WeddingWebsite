@@ -1,0 +1,32 @@
+#rsvp_content {
+	margin-top: 2%;
+}
+
+
+/* result of the group search */
+#result {
+	width: 30%;
+	
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#rsvp_heading {
+	font-family: Segan, Sans-Serif;
+	font-size: 200%;
+	
+	margin-bottom: 3%;
+}
+
+.group_button {
+	font-family: Segan, Sans-Serif;
+	
+	padding: 2%;
+	
+	cursor: pointer;
+}
+
+.group_button:hover {
+	background-color: #efefe8;
+}
