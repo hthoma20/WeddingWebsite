@@ -19,26 +19,48 @@
 	width: 50%;	
 }
 
-.selected {
+#slideshow {
 	display: block;
 	position: fixed;
 	
+	top: 5%;
+	
+	height: 100%;
+	width: 100%;
+		
+	border: 1 px solid red;
+}
+
+#slideshow.hidden {
+	display: none;
+}
+
+#current_photo {
+	display: inline;
+}
+
+#current_photo .gallery_photo {
 	border: 3px solid black;
 }
 
-.selected.horizontal {	
-	top: 5%;
-	bottom: 5%;
-	height: 90%;
-	
-	width: auto;
+#current_photo .gallery_photo.vertical {
+	width: 27%;
+	height: auto;
 }
 
-.selected.vertical {
-	top: 5%;
-	bottom: 5%;
-	height: 90%;
-	
-	width: auto;
+#current_photo .gallery_photo.horizontal {
+	width: 60%;
+	height: auto;
 }
 
+.arrow {
+	display: inline;
+	
+	align-items: center;
+	width: 5%;
+	cursor: pointer;
+}
+
+.arrow:hover {
+	background-color: blue;
+}

@@ -1,0 +1,17 @@
+is_guest,first_name,last_name,group_id,ceremony,reception
+FALSE,John,Thoma,1,TRUE,TRUE
+FALSE,Randi,Thoma,1,TRUE,TRUE
+FALSE,Mary,Thoma,2,TRUE,TRUE
+FALSE,Jake,Nelson,3,TRUE,TRUE
+FALSE,Austin,Nelson,4,TRUE,TRUE
+FALSE,Dana,Kuboyama,5,TRUE,TRUE
+FALSE,Darell,Kuboyama,6,TRUE,FALSE
+FALSE,Drake,Kuboyama,6,TRUE,FALSE
+FALSE,Michael,McGoo,5,FALSE,TRUE
+FALSE,Tracy,Modde,7,TRUE,TRUE
+FALSE,Joe,Kortenhof,8,TRUE,TRUE
+FALSE,Elizabeth,Kortenhof,8,TRUE,TRUE
+FALSE,Michael,Kortenhof,8,TRUE,TRUE
+FALSE,Teddy,Kortenhof,8,TRUE,TRUE
+FALSE,Zanna,Kortenhof,8,TRUE,TRUE
+TRUE,,,8,TRUE,TRUE

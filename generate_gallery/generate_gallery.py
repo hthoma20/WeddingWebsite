@@ -2,6 +2,8 @@ import os
 from PIL import Image
 import random
 
+RANDOMIZE= True
+
 def createImageTag(imageName, imageId):
     if isVertical(imageName):
         orientation= 'vertical'
@@ -24,7 +26,8 @@ def getGalleryImages():
     
     imageFilesList= list(imageFiles)
     
-    random.shuffle(imageFilesList)
+    if RANDOMIZE:
+        random.shuffle(imageFilesList)
     
     return imageFilesList
     

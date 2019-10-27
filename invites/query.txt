@@ -1,0 +1,16 @@
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'John','Thoma',1,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Randi','Thoma',1,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Mary','Thoma',2,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Jake','Nelson',3,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Austin','Nelson',4,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Dana','Kuboyama',5,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Darell','Kuboyama',6,TRUE,FALSE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Drake','Kuboyama',6,TRUE,FALSE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Michael','McGoo',5,FALSE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Tracy','Modde',7,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Joe','Kortenhof',8,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Elizabeth','Kortenhof',8,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Michael','Kortenhof',8,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Teddy','Kortenhof',8,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (FALSE,'Zanna','Kortenhof',8,TRUE,TRUE);
+insert into Invitation (is_guest, first_name, last_name, group_id, ceremony, reception) values (TRUE,'','',8,TRUE,TRUE);
