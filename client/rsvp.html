@@ -33,7 +33,7 @@
 				
 				<form id='search_form'>
 					<label for="name_input">First or Last Name</label>
-					<input id="name_input">
+					<input id="name_input" value="kuboyama">
 					<input type="submit" value="enter">
 				</form>
 			
@@ -41,7 +41,14 @@
 				<div id="result"></div>
 			</div>
 				
-			<div id="rsvp_form"></div>
+			<form id="rsvp_form">
+				<table id="rsvp_table">
+					<tr>
+						<th>Name</th> <th>Hawaii</th> <th>Portland</th>
+					</tr>
+				</table>
+				<input type="button" value="RSVP" onclick="rsvpSubmitted()">
+			</form>
 		</div>
 		
 		<script src="./scripts/jQuery.min.js"></script>

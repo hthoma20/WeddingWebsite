@@ -30,3 +30,12 @@
 .group_button:hover {
 	background-color: #efefe8;
 }
+
+/* the attending checkbox table */
+table {
+	margin: auto;
+}
+
+tr {
+	padding: 3%;
+}
