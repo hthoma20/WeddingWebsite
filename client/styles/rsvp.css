@@ -1,4 +1,5 @@
 #rsvp_content {
+	font-family: Segan, Sans-Serif;
 	margin-top: 2%;
 }
 
@@ -10,13 +11,6 @@
 	margin-top: 3%;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#rsvp_heading {
-	font-family: Segan, Sans-Serif;
-	font-size: 200%;
-	
-	margin-bottom: 3%;
 }
 
 .group_button {
@@ -38,4 +32,10 @@ table {
 
 tr {
 	padding: 3%;
+}
+
+#rsvp_photo {
+	margin-top: 1%;
+	margin-bottom: 3%;
+	width: 40%
 }
