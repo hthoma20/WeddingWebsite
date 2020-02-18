@@ -17,10 +17,12 @@ module.exports.query= function(query){
 			}
 			
 			con.query(query, function (err, result) {
+				con.end();
+				
 				if (err){
 					reject(err);
 				}
-
+				
 				resolve(result);
 			});
 		});
