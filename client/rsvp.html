@@ -33,8 +33,8 @@
 				
 				<form id='search_form'>
 					<!-- <label for="name_input">First or Last Name</label> -->
-					<input id="name_input" value="kuboyama">
-					<input class="search_button" type="submit" value="Search">
+					<input id="name_input" value="joe">
+					<input class="submit_button" type="submit" value="Search">
 				</form>
 			
 			
@@ -45,10 +45,12 @@
 				<p class="instruction">Press Yes or No to indicate whether you're attending</p>
 				<table id="rsvp_table">
 					<tr>
-						<th>Name</th> <th>Hawaii</th> <th>Portland</th>
+						<th>Name</th> <th id="portland_header">Portland</th> <th id="hawaii_header">Hawaii</th>
 					</tr>
 				</table>
-				<input type="button" value="RSVP" onclick="rsvpSubmitted()">
+				<div id="send_rsvp">
+					<input class="submit_button" type="button" value="RSVP" onclick="rsvpSubmitted()">
+				</div>
 			</form>
 		</div>
 		

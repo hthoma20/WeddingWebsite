@@ -118,17 +118,41 @@ function layoutPeople(group){
 	let rsvpTable= document.getElementById('rsvp_table');
 	removeAllRows(rsvpTable);
 	
+	removeBadColumns(group);
+	
 	for(let i= 0; i < group.members.length; i++){
 		let row= rsvpTable.insertRow(i+1);
 		populateMemberRow(row, group.members[i]);
 	}
 }
 
+//remove the headers if no group memebers are invited
+function removeBadColumns(group){
+	let hasHawaii= false;
+	let hasPortland= false;
+	
+	for(member of group.members){
+		if(member.reception){
+			hasHawaii= true;
+		}
+		if(member.ceremony){
+			hasPortland= true;
+		}
+	}
+	
+	if(!hasHawaii){
+		document.getElementById('hawaii_header').style.display= 'none';
+	}
+	if(!hasPortland){
+		document.getElementById('portland_header').style.display= 'none';
+	}
+}
+
 //insert the correct data into the the given table row
 function populateMemberRow(row, member){
 	let nameCell= row.insertCell(0);
-	let receptionCell= row.insertCell(1);
-	let ceremonyCell= row.insertCell(2);
+	let ceremonyCell= row.insertCell(1);
+	let receptionCell= row.insertCell(2);
 	
 	nameCell.innerHTML= `${memberName(member)}`;
 	
@@ -223,7 +247,8 @@ function rsvpSubmitted(){
 		data[guest_id][field]= rsvpResults[key];
 	}
 	
-	console.log(data);
+	let resultDiv= document.getElementById('send_rsvp');
+	resultDiv.innerHTML= '';
 	
 	//send to server
 	$.ajax({
@@ -235,10 +260,12 @@ function rsvpSubmitted(){
 		
 		success: function(response){
 			console.log(response);
+			resultDiv.innerHTML= "Your RSVP has been recieved";
 		},
 		
 		error: function(err){
 			console.log(err.status, err.responseJSON);
+			resultDiv.innerHTML= "There was an error processing your RSVP, please try again";
 		}
 	});
 }

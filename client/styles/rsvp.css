@@ -30,17 +30,14 @@ table {
 	margin: auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
-	
-	font-size: 130%;
-}
 
-th {
-	padding: 5%;
+	font-size: 130%;
+	
+	border-spacing: 40px 20px;
 }
 
 td {
-	padding: 3%;
-	width: fit-content;
+	text-align: center;
 	white-space: nowrap;
 }
 
@@ -63,7 +60,7 @@ td {
 	font-style: italic;
 }
 
-.search_button {
+.submit_button {
 	font-family: Segan, Sans-Serif;
 	font-size: 130%;
 }
