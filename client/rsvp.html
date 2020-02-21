@@ -24,15 +24,17 @@
 			<a class="tab_button" href="./gallery.html">Gallery</a>
 		</div>
 		
-		<img src="./images/gallery/DSC_6139.jpg" alt="The happy couple" id="rsvp_photo"/>
+		<!-- <img src="./images/gallery/DSC_6139.jpg" alt="The happy couple" id="rsvp_photo"/> -->
 		
 		<div id="rsvp_content">		
 			<div id="group_search">
 				
+				<p class="instruction">Search for your first or last name</p>
+				
 				<form id='search_form'>
-					<label for="name_input">First or Last Name</label>
+					<!-- <label for="name_input">First or Last Name</label> -->
 					<input id="name_input" value="kuboyama">
-					<input type="submit" value="Search">
+					<input class="search_button" type="submit" value="Search">
 				</form>
 			
 			
@@ -40,6 +42,7 @@
 			</div>
 				
 			<form id="rsvp_form">
+				<p class="instruction">Press Yes or No to indicate whether you're attending</p>
 				<table id="rsvp_table">
 					<tr>
 						<th>Name</th> <th>Hawaii</th> <th>Portland</th>
@@ -50,6 +53,6 @@
 		</div>
 		
 		<script src="./scripts/jQuery.min.js"></script>
-		<script src="../scripts/rsvp.js"></script>
+		<script src="./scripts/rsvp.js"></script>
 	</body>
 <html>

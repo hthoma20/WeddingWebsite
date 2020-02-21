@@ -17,6 +17,7 @@ function readForm(form_id){
 	
 	for(let entry of document.getElementById(form_id)){
 		if(entry.id){
+			console.log(entry.id);
 			if(entry.type == 'checkbox'){
 				entries[entry.id]= entry.checked;
 			}
@@ -90,6 +91,10 @@ function groupDiv(group){
 	//convert each member to a string and join with &
 	let group_string= group.members.map(memberName).join(' & ');
 	
+	if(group.group_id == 14){
+		group_string= "The Kortenhof Family";
+	}
+	
 	let div= document.createElement('div');
 	
 	div.className= 'group_button';
@@ -128,17 +133,80 @@ function populateMemberRow(row, member){
 	nameCell.innerHTML= `${memberName(member)}`;
 	
 	if(member.reception){
-		let checked= member.attending_reception ? 'checked' : '';
-		receptionCell.innerHTML= `<input id="attending_reception#${member.guest_id}" type="checkbox" ${checked}">`;
+		let buttonId= `attending_reception#${member.guest_id}`;
+		receptionCell.appendChild(createRsvpButton(buttonId, member.attending_reception));
 	}
 	if(member.ceremony){
-		let checked= member.attending_ceremony ? 'checked' : '';
-		ceremonyCell.innerHTML= `<input id="attending_ceremony#${member.guest_id}" type="checkbox" ${checked}">`;
+		let buttonId= `attending_ceremony#${member.guest_id}`;
+		ceremonyCell.appendChild(createRsvpButton(buttonId, member.attending_ceremony));
 	}
 }
 
+//create the rspv button given the id and the value they have already marked
+function createRsvpButton(id, attending){
+	let yes= document.createElement('span');
+	let no = document.createElement('span');
+	
+	yes.innerHTML= 'Yes';
+	no.innerHTML= 'No';
+	
+	yes.classList.add('yes_no');
+	yes.classList.add('yes');
+	no.classList.add('yes_no');
+	no.classList.add('no');
+	
+	if(attending == 0){
+		no.classList.add('selected');
+	}
+	else if(attending == 1){
+		yes.classList.add('selected');
+	}
+	
+	yes.onclick= function(){
+		yes.classList.add('selected');
+		no.classList.remove('selected');
+	}
+	
+	no.onclick= function(){
+		no.classList.add('selected');
+		yes.classList.remove('selected');
+	}
+	
+	
+	let rsvp= document.createElement('span');	
+	rsvp.id= id;
+	rsvp.className= 'rsvp_button';
+	rsvp.appendChild(yes);
+	rsvp.appendChild(no);
+	return rsvp;
+}
+
+//return a map from span id (attending_{party}#{guest_id}) to whether they're attending
+function readRsvp(){
+	let buttons= document.getElementsByClassName('rsvp_button');
+	
+	let results= {};
+	
+	for(b of buttons){
+		let selected= b.getElementsByClassName('selected');
+		
+		//nothing selected;
+		if(selected.length == 0) continue;
+		
+		//yes selected
+		if(selected[0].classList.contains('yes')){
+			results[b.id]= true;
+		}
+		else{ //no selected
+			results[b.id]= false;
+		}
+	}
+	
+	return results;
+}
+
 function rsvpSubmitted(){
-	let rsvpResults= readForm('rsvp_form');
+	let rsvpResults= readRsvp();
 	
 	//map from guest_id to attendence
 	let data= {};
