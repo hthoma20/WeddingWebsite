@@ -12,6 +12,7 @@ app.use(express.static(root_dir));
 app.use(bodyParser.json());
 
 app.use(require('./server/invitation'));
+app.use(require('./server/songs'));
 
 app.listen(port);
 console.log(`listening on port ${port}`);
