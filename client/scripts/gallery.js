@@ -16,7 +16,6 @@ var slideId= -1;
 //clear any photos from the current photo
 function clearPhoto(){
 	for(photo of currentPhotoNode.children){
-		console.log("removing ", photo);
 		currentPhotoNode.removeChild(photo);
 	}
 }
