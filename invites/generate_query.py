@@ -1,4 +1,4 @@
-with open('invites.csv', 'r') as csv_file, open('query.txt', 'w') as query_file:
+with open('portland_invites.csv', 'r') as csv_file, open('portland_query.txt', 'w') as query_file:
     
     is_header= True
     for entry in csv_file:
