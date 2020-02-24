@@ -17,6 +17,7 @@ function readForm(form_id){
 }
 
 document.getElementById('song_form').onsubmit= function(){
+	document.getElementById("song_response").innerHTML= "Adding suggestion...";
 	songInfo = readForm('song_form');
 	
 	console.log(songInfo);
@@ -37,10 +38,12 @@ document.getElementById('song_form').onsubmit= function(){
 		
 		success: function(response){
 			console.log(response);
+			document.getElementById("song_response").innerHTML= `Added ${data.Title} by ${data.Artist} to song suggestions`;
 		},
 		
 		error: function(err){
 			console.log(err.status, err.responseJSON);
+			document.getElementById("song_response").innerHTML= `Error adding song`;
 		}
 	});
 	
