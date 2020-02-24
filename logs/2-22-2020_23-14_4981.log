@@ -1,3 +1,0 @@
-23:14:55.145 INFO  Express: /add_song 
-23:14:55.153 INFO  New song: {"Title":"","Artist":""} 
-23:14:55.153 INFO  Making query: insert into Songs (Tile, Artist) values ('', '') 

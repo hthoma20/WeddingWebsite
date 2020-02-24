@@ -1,3 +1,0 @@
-23:44:05.080 INFO  Express: /update_rsvp 
-23:44:05.132 INFO  Update rsvp: {"26":{"attending_reception":false,"attending_ceremony":false},"29":{"attending_reception":false}} 
-23:44:05.148 ERROR Bad rsvp update body: {"26":{"attending_reception":false,"attending_ceremony":false},"29":{"attending_reception":false}} 

@@ -7,6 +7,10 @@
 	margin-top: 1%;
 }
 
+#gallery_content.dark {
+	filter: brightness(35%);
+}
+
 .gallery_photo {
 	cursor: pointer;
 }
@@ -39,7 +43,7 @@
 }
 
 #current_photo .gallery_photo {
-	border: 3px solid black;
+	border: 2px solid black;
 }
 
 #current_photo .gallery_photo.vertical {
@@ -54,19 +58,12 @@
 
 .arrow {
 	align-items: center;
-	width: 5%;
+	width: 3%;
 	cursor: pointer;
 	
-	margin-bottom: 15%;
-	
-	background-color: #f5f5f2;
-	border-radius: 20px;
+	margin-bottom: 17%;
 }
 
-.arrow:hover {
-	filter: brightness(50%);
-	background-color: #efefe8;
-}
 
 #close_button {
 	position: fixed;

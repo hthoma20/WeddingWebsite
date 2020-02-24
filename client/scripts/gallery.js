@@ -29,6 +29,7 @@ function stopSlideShow(){
 	clearPhoto();
 	slideshowVisible(false);
 	slideId= -1;
+	document.getElementById('gallery_content').classList.remove('dark');
 }
 
 function changeSlide(imageId){
@@ -43,6 +44,9 @@ function changeSlide(imageId){
 	
 	//set the slideshow visible
 	slideshowVisible(true);
+	
+	//darken the other pictures
+	document.getElementById('gallery_content').classList.add('dark');
 }
 
 function imageClicked(imageId){
