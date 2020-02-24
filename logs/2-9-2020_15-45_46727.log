@@ -1,0 +1,104 @@
+15:45:48.392 INFO  Express: /rsvp.html 
+15:45:51.664 INFO  Express: /get_invite_info?input=kuboyama 
+15:45:51.672 INFO  Search: kuboyama 
+15:46:33.763 INFO  Express: /rsvp.html 
+15:46:40.471 INFO  Express: /get_invite_info?input=gui 
+15:46:40.471 INFO  Search: gui 
+15:46:42.571 INFO  Express: /get_invite_info?input=gui 
+15:46:42.575 INFO  Search: gui 
+15:46:49.410 INFO  Express: /get_invite_info?input=guieb 
+15:46:49.418 INFO  Search: guieb 
+15:47:04.131 INFO  Express: /update_rsvp 
+15:47:04.183 INFO  Update rsvp: {"undefined":{"attending_reception":false,"attending_ceremony":true}} 
+15:47:04.183 ERROR Bad guest id in rsvp: undefined 
+15:47:04.183 ERROR Bad rsvp update body: {"undefined":{"attending_reception":false,"attending_ceremony":true}} 
+15:48:01.720 INFO  Express: /rsvp.html 
+15:48:07.188 INFO  Express: /get_invite_info?input=guieb 
+15:48:07.192 INFO  Search: guieb 
+15:48:08.502 INFO  Express: /get_invite_info?input=guieb 
+15:48:08.506 INFO  Search: guieb 
+15:48:58.350 INFO  Express: /rsvp.html 
+15:49:13.933 INFO  Express: /get_invite_info?input=rebekah 
+15:49:13.937 INFO  Search: rebekah 
+15:49:32.898 INFO  Express: /get_invite_info?input=hutchings 
+15:49:32.906 INFO  Search: hutchings 
+15:50:07.883 INFO  Express: /rsvp.html 
+15:50:13.856 INFO  Express: /get_invite_info?input=kuboyama 
+15:50:13.860 INFO  Search: kuboyama 
+15:50:13.985 ERROR Search error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"sqlMessage":"User sql3322071 already has more than 'max_user_connections' active connections","sqlState":"42000","fatal":true}
+Error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+    at Handshake.Sequence._packetToError (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Handshake.ErrorPacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18)
+    at Protocol._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:119:18)
+    at Promise (C:\Users\harry\Documents\Wedding\server\db.js:14:7)
+    at new Promise (<anonymous>)
+    at Object.module.exports.query (C:\Users\harry\Documents\Wedding\server\db.js:12:9)
+    at getGroupIds (C:\Users\harry\Documents\Wedding\server\invitation.js:114:12)
+    at router.get (C:\Users\harry\Documents\Wedding\server\invitation.js:20:2)
+    at Layer.handle [as handle_request] (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\route.js:137:13) 
+15:50:14.995 INFO  Express: /get_invite_info?input=kuboyama 
+15:50:15.003 INFO  Search: kuboyama 
+15:50:15.133 ERROR Search error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"sqlMessage":"User sql3322071 already has more than 'max_user_connections' active connections","sqlState":"42000","fatal":true}
+Error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+    at Handshake.Sequence._packetToError (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Handshake.ErrorPacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18)
+    at Protocol._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:119:18)
+    at Promise (C:\Users\harry\Documents\Wedding\server\db.js:14:7)
+    at new Promise (<anonymous>)
+    at Object.module.exports.query (C:\Users\harry\Documents\Wedding\server\db.js:12:9)
+    at getGroupIds (C:\Users\harry\Documents\Wedding\server\invitation.js:114:12)
+    at router.get (C:\Users\harry\Documents\Wedding\server\invitation.js:20:2)
+    at Layer.handle [as handle_request] (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\route.js:137:13) 
+15:53:59.737 INFO  Express: /rsvp.html 
+15:54:01.943 INFO  Express: /get_invite_info?input=kuboyama 
+15:54:01.951 INFO  Search: kuboyama 
+15:54:02.325 ERROR Search error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"sqlMessage":"User sql3322071 already has more than 'max_user_connections' active connections","sqlState":"42000","fatal":true}
+Error: ER_TOO_MANY_USER_CONNECTIONS: User sql3322071 already has more than 'max_user_connections' active connections
+    at Handshake.Sequence._packetToError (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Handshake.ErrorPacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18)
+    at Protocol._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    --------------------
+    at Protocol._enqueue (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at Connection.connect (C:\Users\harry\Documents\Wedding\node_modules\mysql\lib\Connection.js:119:18)
+    at Promise (C:\Users\harry\Documents\Wedding\server\db.js:14:7)
+    at new Promise (<anonymous>)
+    at Object.module.exports.query (C:\Users\harry\Documents\Wedding\server\db.js:12:9)
+    at getGroupIds (C:\Users\harry\Documents\Wedding\server\invitation.js:114:12)
+    at router.get (C:\Users\harry\Documents\Wedding\server\invitation.js:20:2)
+    at Layer.handle [as handle_request] (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\harry\Documents\Wedding\node_modules\express\lib\router\route.js:137:13) 

@@ -1,0 +1,27 @@
+p {
+	font-variant: normal;
+	/* line-height: 40px; */
+}
+
+#website_link {
+	color: black;
+	text-decoration: none;
+	background-color: #efefe8;
+	
+	/* top right bottom left */
+	top: -100px;
+	padding: 1% 2% 1% 2%;
+}
+
+#website_link:hover {
+	background-color: #e9e9d0;
+}
+
+
+.space_above {
+	margin-top: 3%;
+}
+
+#hotel_photo {
+	width: 30%;
+}

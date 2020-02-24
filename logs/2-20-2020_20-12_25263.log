@@ -1,0 +1,76 @@
+20:12:28.883 INFO  Express: /rsvp.html 
+20:12:31.759 INFO  Express: /get_invite_info?input=kuboyama 
+20:12:31.767 INFO  Search: kuboyama 
+20:12:43.174 INFO  Express: /update_rsvp 
+20:12:43.214 INFO  Update rsvp: {"30":{"attending_reception":false,"attending_ceremony":false},"31":{"attending_reception":false,"attending_ceremony":true}} 
+20:12:43.215 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=false where guest_id=30 
+20:12:43.215 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=true where guest_id=31 
+20:24:15.169 INFO  Express: /rsvp.html 
+20:24:19.087 INFO  Express: /get_invite_info?input=kuboyama 
+20:24:19.091 INFO  Search: kuboyama 
+20:24:53.790 INFO  Express: /rsvp.html 
+20:24:55.074 INFO  Express: /get_invite_info?input=kuboyama 
+20:24:55.079 INFO  Search: kuboyama 
+20:25:01.062 INFO  Express: /rsvp.html 
+20:25:05.576 INFO  Express: /get_invite_info?input=rodger 
+20:25:05.579 INFO  Search: rodger 
+20:25:08.451 INFO  Express: /get_invite_info?input=roger 
+20:25:08.455 INFO  Search: roger 
+20:25:49.045 INFO  Express: /update_rsvp 
+20:25:49.051 INFO  Update rsvp: {} 
+20:25:51.574 INFO  Express: /update_rsvp 
+20:25:51.579 INFO  Update rsvp: {"115":{"attending_reception":true}} 
+20:25:51.579 INFO  Making query: update Invitation set attending_reception=true where guest_id=115 
+20:26:19.564 INFO  Express: /rsvp.html 
+20:26:24.237 INFO  Express: /get_invite_info?input=roger 
+20:26:24.240 INFO  Search: roger 
+20:27:07.357 INFO  Express: /rsvp.html 
+20:27:11.271 INFO  Express: /get_invite_info?input=roger 
+20:27:11.274 INFO  Search: roger 
+20:28:17.513 INFO  Express: /rsvp.html 
+20:28:25.836 INFO  Express: /get_invite_info?input=joe 
+20:28:25.839 INFO  Search: joe 
+20:31:33.846 INFO  Express: /rsvp.html 
+20:31:39.950 INFO  Express: /get_invite_info?input=zanna 
+20:31:39.952 INFO  Search: zanna 
+20:36:31.608 INFO  Express: /rsvp.html 
+20:36:51.357 INFO  Express: /rsvp.html 
+20:36:53.264 INFO  Express: /get_invite_info?input=joe 
+20:36:53.268 INFO  Search: joe 
+20:37:23.891 INFO  Express: /rsvp.html 
+20:37:25.671 INFO  Express: /get_invite_info?input=joe 
+20:37:25.675 INFO  Search: joe 
+20:38:11.939 INFO  Express: /rsvp.html 
+20:38:13.436 INFO  Express: /get_invite_info?input=joe 
+20:38:13.440 INFO  Search: joe 
+20:39:45.023 INFO  Express: /rsvp.html 
+20:39:46.811 INFO  Express: /get_invite_info?input=joe 
+20:39:46.815 INFO  Search: joe 
+20:41:23.572 INFO  Express: /rsvp.html 
+20:41:24.946 INFO  Express: /get_invite_info?input=joe 
+20:41:24.950 INFO  Search: joe 
+20:42:41.680 INFO  Express: /rsvp.html 
+20:42:43.129 INFO  Express: /get_invite_info?input=joe 
+20:42:43.133 INFO  Search: joe 
+20:42:56.485 INFO  Express: /rsvp.html 
+20:42:58.370 INFO  Express: /get_invite_info?input=joe 
+20:42:58.374 INFO  Search: joe 
+20:57:58.520 INFO  Express: /rsvp.html 
+20:58:00.101 INFO  Express: /get_invite_info?input=joe 
+20:58:00.105 INFO  Search: joe 
+20:58:24.280 INFO  Express: /update_rsvp 
+20:58:24.285 INFO  Update rsvp: {"21":{"attending_ceremony":true,"attending_reception":true},"22":{"attending_ceremony":true,"attending_reception":false},"25":{"attending_ceremony":true,"attending_reception":false}} 
+20:58:24.285 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=true where guest_id=21 
+20:58:24.286 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=false where guest_id=22 
+20:58:24.286 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=false where guest_id=25 
+20:59:25.579 INFO  Express: /rsvp.html 
+20:59:26.765 INFO  Express: /get_invite_info?input=joe 
+20:59:26.769 INFO  Search: joe 
+21:04:42.355 INFO  Express: /rsvp.html 
+21:04:43.845 INFO  Express: /get_invite_info?input=joe 
+21:04:43.849 INFO  Search: joe 
+21:04:46.072 INFO  Express: /update_rsvp 
+21:04:46.075 INFO  Update rsvp: {"21":{"attending_ceremony":true,"attending_reception":true},"22":{"attending_ceremony":true,"attending_reception":false},"25":{"attending_ceremony":true,"attending_reception":false}} 
+21:04:46.075 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=true where guest_id=21 
+21:04:46.076 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=false where guest_id=22 
+21:04:46.076 INFO  Making query: update Invitation set attending_ceremony=true,attending_reception=false where guest_id=25 

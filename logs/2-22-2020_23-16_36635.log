@@ -1,0 +1,6 @@
+23:16:40.153 INFO  Express: /add_song 
+23:16:40.157 INFO  New song: {"Title":"","Artist":""} 
+23:16:40.157 INFO  Making query: insert into Songs (Title, Artist) values ('', '') 
+23:19:56.612 INFO  Express: /add_song 
+23:19:56.612 INFO  New song: {"Title":"","Artist":""} 
+23:19:56.612 INFO  Making query: insert into Songs (Title, Artist) values ('', '') 

@@ -1,0 +1,13 @@
+23:53:14.527 INFO  Express: /update_rsvp 
+23:53:14.577 INFO  Update rsvp: {"26":{"attending_reception":true,"attending_ceremony":false},"29":{"attending_reception":true}} 
+23:53:14.583 INFO  Making query: update Invitation set attending_reception=true,attending_ceremony=false where guest_id=26 
+23:53:14.727 INFO  Making query: update Invitation set attending_reception=true where guest_id=29 
+23:57:43.979 INFO  Express: /gallery.html 
+23:57:46.160 INFO  Express: /rsvp.html 
+23:57:53.117 INFO  Express: /guests.html 
+23:57:55.999 INFO  Express: / 
+23:57:59.625 INFO  Express: /registry.html 
+23:58:29.003 INFO  Express: /gallery.html 
+23:58:32.748 INFO  Express: /rsvp.html 
+23:58:41.372 INFO  Express: /registry.html 
+23:58:43.088 INFO  Express: /gallery.html 

@@ -1,0 +1,52 @@
+#song_content {
+	margin-top: 2%;
+}
+
+.instruction {
+	font-variant: normal;
+	font-style: italic;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+	
+	text-align: center;
+	
+	/* border: 1px solid red; */
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 20%;
+    text-align: right;
+	
+	font-family: Segan, Sans-Serif;
+	font-size: 130%;
+	font-weight: bold;
+	
+	/* border: 1px solid blue; */
+}
+
+.text_input {
+	margin-top: 1%;
+    margin-left: 2%;
+	
+	width: 30%;
+	
+	
+	font-family: Segan, Sans-Serif;
+	font-size: 130%;
+	
+	/* border: 1px solid green; */
+}
+
+.submit_button {
+	margin-top: 2%;
+	
+	font-family: Segan, Sans-Serif;
+	font-size: 130%;
+}

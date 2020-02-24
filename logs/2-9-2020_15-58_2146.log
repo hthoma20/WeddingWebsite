@@ -1,0 +1,27 @@
+15:58:12.570 INFO  Express: /rsvp.html 
+15:58:15.095 INFO  Express: /get_invite_info?input=kuboyama 
+15:58:15.107 INFO  Search: kuboyama 
+15:58:17.184 INFO  Express: /get_invite_info?input=kuboyama 
+15:58:17.192 INFO  Search: kuboyama 
+15:58:47.879 INFO  Express: /get_invite_info?input=jeff 
+15:58:47.883 INFO  Search: jeff 
+15:59:05.324 INFO  Express: /get_invite_info?input=kuboyama 
+15:59:05.328 INFO  Search: kuboyama 
+15:59:10.564 INFO  Express: /get_invite_info?input=galapia 
+15:59:10.568 INFO  Search: galapia 
+15:59:22.029 INFO  Express: /get_invite_info?input=john 
+15:59:22.033 INFO  Search: john 
+15:59:30.433 INFO  Express: /update_rsvp 
+15:59:30.470 INFO  Update rsvp: {"undefined":{"attending_reception":false,"attending_ceremony":true}} 
+15:59:30.470 ERROR Bad guest id in rsvp: undefined 
+15:59:30.470 ERROR Bad rsvp update body: {"undefined":{"attending_reception":false,"attending_ceremony":true}} 
+16:01:51.724 INFO  Express: /rsvp.html 
+16:01:55.027 INFO  Express: /get_invite_info?input=john 
+16:01:55.027 INFO  Search: john 
+16:02:03.134 INFO  Express: /update_rsvp 
+16:02:03.138 INFO  Update rsvp: {"56":{"attending_reception":true,"attending_ceremony":false},"57":{"attending_reception":false,"attending_ceremony":true}} 
+16:02:03.138 INFO  Making query: update Invitation set attending_reception=true,attending_ceremony=false where guest_id=56 
+16:02:03.138 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=true where guest_id=57 
+16:02:19.894 INFO  Express: /rsvp.html 
+16:02:22.840 INFO  Express: /get_invite_info?input=john 
+16:02:22.844 INFO  Search: john 

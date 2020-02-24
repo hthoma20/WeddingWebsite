@@ -1,0 +1,92 @@
+15:10:51.009 INFO  Express: / 
+15:17:37.465 INFO  Express: /rsvp.html 
+15:17:39.390 INFO  Express: /get_invite_info?input=kuboyama 
+15:17:39.394 INFO  Search: kuboyama 
+15:23:03.641 INFO  Express: /rsvp.html 
+15:23:04.990 INFO  Express: /get_invite_info?input=kuboyama 
+15:23:04.990 INFO  Search: kuboyama 
+15:23:19.484 INFO  Express: /rsvp.html 
+15:23:21.247 INFO  Express: /get_invite_info?input=kuboyama 
+15:23:21.247 INFO  Search: kuboyama 
+15:27:25.442 INFO  Express: /rsvp.html 
+15:27:27.520 INFO  Express: /get_invite_info?input=kuboyama 
+15:27:27.524 INFO  Search: kuboyama 
+15:29:20.866 INFO  Express: /rsvp.html 
+15:29:25.973 INFO  Express: /get_invite_info?input=kuboyama 
+15:29:25.973 INFO  Search: kuboyama 
+15:30:35.293 INFO  Express: /rsvp.html 
+15:30:40.163 INFO  Express: /get_invite_info?input=kuboyama 
+15:30:40.163 INFO  Search: kuboyama 
+15:39:26.067 INFO  Express: /rsvp.html 
+15:39:27.527 INFO  Express: /get_invite_info?input=kuboyama 
+15:39:27.531 INFO  Search: kuboyama 
+16:42:04.843 INFO  Express: /rsvp.html 
+16:42:06.616 INFO  Express: /get_invite_info?input=kuboyama 
+16:42:06.616 INFO  Search: kuboyama 
+16:45:40.761 INFO  Express: /rsvp.html 
+16:45:44.276 INFO  Express: /get_invite_info?input=kuboyama 
+16:45:44.276 INFO  Search: kuboyama 
+16:45:56.136 INFO  Express: /update_rsvp 
+16:45:56.184 INFO  Update rsvp: {"30":{"attending_ceremony":false},"31":{"attending_ceremony":false}} 
+16:45:56.188 INFO  Making query: update Invitation set attending_ceremony=false where guest_id=30 
+16:45:56.188 INFO  Making query: update Invitation set attending_ceremony=false where guest_id=31 
+16:48:54.209 INFO  Express: /rsvp.html 
+16:48:55.887 INFO  Express: /get_invite_info?input=kuboyama 
+16:48:55.887 INFO  Search: kuboyama 
+16:49:08.988 INFO  Express: /update_rsvp 
+16:49:08.988 INFO  Update rsvp: {"30":{"attending_ceremony":false},"31":{"attending_ceremony":true}} 
+16:49:08.988 INFO  Making query: update Invitation set attending_ceremony=false where guest_id=30 
+16:49:08.988 INFO  Making query: update Invitation set attending_ceremony=true where guest_id=31 
+16:49:12.060 INFO  Express: /rsvp.html 
+16:49:13.574 INFO  Express: /get_invite_info?input=kuboyama 
+16:49:13.574 INFO  Search: kuboyama 
+18:26:55.221 INFO  Express: /rsvp.html 
+18:26:57.018 INFO  Express: /get_invite_info?input=kuboyama 
+18:26:57.026 INFO  Search: kuboyama 
+18:28:06.558 INFO  Express: /rsvp.html 
+18:28:08.715 INFO  Express: /get_invite_info?input=kuboyama 
+18:28:08.723 INFO  Search: kuboyama 
+18:29:51.784 INFO  Express: /rsvp.html 
+18:29:54.187 INFO  Express: /get_invite_info?input=kuboyama 
+18:29:54.191 INFO  Search: kuboyama 
+18:33:24.824 INFO  Express: /rsvp.html 
+18:33:26.330 INFO  Express: /get_invite_info?input=kuboyama 
+18:33:26.334 INFO  Search: kuboyama 
+18:38:59.052 INFO  Express: /rsvp.html 
+18:39:01.872 INFO  Express: /get_invite_info?input=kuboyama 
+18:39:01.876 INFO  Search: kuboyama 
+18:39:11.321 INFO  Express: /rsvp.html 
+18:39:23.394 INFO  Express: /get_invite_info?input=michael 
+18:39:23.397 INFO  Search: michael 
+19:05:39.938 INFO  Express: /rsvp.html 
+19:05:44.033 INFO  Express: /get_invite_info?input=kuboyama 
+19:05:44.038 INFO  Search: kuboyama 
+19:07:33.197 INFO  Express: /update_rsvp 
+19:07:33.208 INFO  Update rsvp: {} 
+19:08:14.587 INFO  Express: /rsvp.html 
+19:08:16.883 INFO  Express: /get_invite_info?input=kuboyama 
+19:08:16.887 INFO  Search: kuboyama 
+19:08:23.554 INFO  Express: /update_rsvp 
+19:08:23.560 INFO  Update rsvp: {} 
+19:10:35.303 INFO  Express: /rsvp.html 
+19:10:35.337 INFO  Express: /update_rsvp 
+19:10:35.340 INFO  Update rsvp: {} 
+19:10:37.713 INFO  Express: /get_invite_info?input=kuboyama 
+19:10:37.719 INFO  Search: kuboyama 
+19:11:26.565 INFO  Express: /rsvp.html 
+19:11:27.798 INFO  Express: /get_invite_info?input=kuboyama 
+19:11:27.801 INFO  Search: kuboyama 
+19:11:32.648 INFO  Express: /update_rsvp 
+19:11:32.652 INFO  Update rsvp: {"30":{"attending_reception":false,"attending_ceremony":false},"31":{"attending_reception":false,"attending_ceremony":false}} 
+19:11:32.653 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=false where guest_id=30 
+19:11:32.653 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=false where guest_id=31 
+19:11:44.111 INFO  Express: /update_rsvp 
+19:11:44.115 INFO  Update rsvp: {"30":{"attending_reception":false,"attending_ceremony":false},"31":{"attending_reception":false,"attending_ceremony":true}} 
+19:11:44.115 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=false where guest_id=30 
+19:11:44.115 INFO  Making query: update Invitation set attending_reception=false,attending_ceremony=true where guest_id=31 
+19:12:05.303 INFO  Express: /rsvp.html 
+19:12:07.452 INFO  Express: /get_invite_info?input=kuboyama 
+19:12:07.457 INFO  Search: kuboyama 
+20:01:46.948 INFO  Express: /rsvp.html 
+20:01:48.457 INFO  Express: /get_invite_info?input=kuboyama 
+20:01:48.463 INFO  Search: kuboyama 

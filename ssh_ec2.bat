@@ -1,0 +1,1 @@
+ssh -i "wedding_key.pem" ec2-user@ec2-35-164-220-161.us-west-2.compute.amazonaws.com
