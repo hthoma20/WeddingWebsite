@@ -260,7 +260,7 @@ function rsvpSubmitted(){
 		
 		success: function(response){
 			console.log(response);
-			resultDiv.innerHTML= "Your RSVP has been recieved";
+			resultDiv.innerHTML= "Your RSVP has been received";
 		},
 		
 		error: function(err){
