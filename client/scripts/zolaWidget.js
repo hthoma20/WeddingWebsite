@@ -973,7 +973,7 @@ var ZolaWidget = (function() {
 	iframe.setAttribute('allowTransparency', 'true');
     iframe.style.border = 'none';
     iframe.style.height = '1100px';
-    iframe.style.width = '75%';
+    iframe.style.width = '50%';
 	iframe.style.background = 'none';
     iframe.style.position = 'relative';
     iframe.style.overflow = 'hidden';

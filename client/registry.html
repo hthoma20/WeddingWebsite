@@ -26,19 +26,41 @@
 			<a class="tab_button" href="./gallery.html">Gallery</a>
 		</div>
 		
-		<a class="zola-registry-embed" href="https://www.zola.com/registry/harryanddaylin" data-registry-key="harryanddaylin">Our Zola Wedding Registry</a>
-		<script>
-			!function(e,t,n){
-				var s;
-				var a= e.getElementsByTagName(t)[0];
-				if(!e.getElementById(n)){
-					s=e.createElement(t);
-					s.async= true;
-					s.src="./scripts/zolaWidget.js";
-					a.parentNode.insertBefore(s,a);
-				}
-			}(document,"script","zola-wjs");
-		</script>
+		<p id="poem">
+			
+			Money gifts would be the best<br>
+			To help us fill our treasure chest<br>
+			Cash is king and easy to bring<br>
+			But if you want to shop, be our guest<br>
+			<br>
+			Below you'll find a smallish list<br>
+			Of things we'd like to get as gifts<br>
+			So take an item off the shelf<br>
+			Or just contribute what you wish<br>
+			<br>
+			Please don't stress about what to bring,<br>
+			Anything will make us sing<br>
+			Your presence on our special day<br>
+			Is to us, the most important thing<br>
+			
+		</p>
+		
+		<div id="zola_registry">
+			<a class="zola-registry-embed" href="https://www.zola.com/registry/harryanddaylin" data-registry-key="harryanddaylin">Our Zola Wedding Registry</a>
+			<script>
+				!function(e,t,n){
+					var s;
+					var a= e.getElementsByTagName(t)[0];
+					if(!e.getElementById(n)){
+						s=e.createElement(t);
+						s.async= true;
+						<!-- s.src="./scripts/zolaWidget.js"; -->
+						s.src="https://widget.zola.com/js/widget.js";
+						a.parentNode.insertBefore(s,a);
+					}
+				}(document,"script","zola-wjs");
+			</script>
+		</div>
 		
 		<script src="./scripts/jQuery.min.js"></script>
 	</body>

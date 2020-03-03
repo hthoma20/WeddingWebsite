@@ -1,3 +1,29 @@
-.zola-registry-iframe {
-	border : 1px solid red
+a {
+	margin-top: 4%;
+	
+	font-family: Segan, Sans-Serif;
+	
+	font-size: 130%;
+}
+
+#zola_registry {
+	width: 65%;
+	
+	margin: auto;
+}
+
+
+#poem {
+	background-color: #efefe8;
+	border-radius: 30px;
+	
+	width: fit-content;
+	
+	margin: auto;
+	
+	font-size: 140%;
+
+	padding: 1%;
+	margin-top: 2%;
+	margin-bottom: 3%;
 }
