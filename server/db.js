@@ -1,30 +1,37 @@
-const mysql = require('mysql');
-const credentials= require('./credentials');
+const sqlite3 = require('sqlite3');
 
-const connectionInfo = {
-  host: credentials.db_host,
-  user: credentials.db_username,
-  password: credentials.db_password,
-  database: credentials.db_name
-};
+const log= require('./log').logger;
+
 
 module.exports.query= function(query){
-	return new Promise((resolve, reject) => {
-		let con= mysql.createConnection(connectionInfo);
-		con.connect(function(err) {
-			if (err){
+	return new Promise( (resolve, reject) => {
+		
+		let db= new sqlite3.Database('./server/Wedding.db', sqlite3.OPEN_READWRITE, (err) => {
+			if(err){
+				log.error(err);
 				reject(err);
+				return;
+			}
+		});
+		
+		db.all(query, [], (err, rows) => {
+			
+			if(err){
+				console.log(err);
+				return;
 			}
 			
-			con.query(query, function (err, result) {
-				con.end();
-				
-				if (err){
-					reject(err);
-				}
-				
-				resolve(result);
-			});
+			resolve(rows);
+		});
+		
+		db.close((err) => {
+			if (err) {
+				log.error(err.message);
+				reject(err);
+				return;
+			}
+			
+			console.log("db closed");
 		});
 	});
 }

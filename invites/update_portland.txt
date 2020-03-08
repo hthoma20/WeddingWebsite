@@ -1,0 +1,10 @@
+update Invitation set attending_ceremony=true,attending_reception=false where guest_id=1;
+update Invitation set attending_ceremony=true,attending_reception=true where guest_id=44;
+update Invitation set attending_ceremony=true,attending_reception=true where guest_id=45;
+update Invitation set attending_ceremony=true,attending_reception=true where guest_id=2; 
+update Invitation set attending_ceremony=true,attending_reception=true where guest_id=3;
+update Invitation set attending_ceremony=true,attending_reception=false where guest_id=48;
+update Invitation set attending_ceremony=true,attending_reception=false where guest_id=49;
+update Invitation set attending_ceremony=true,attending_reception=true where guest_id=61;
+update Invitation set attending_ceremony=true where guest_id=60;
+update Invitation set attending_ceremony=true,attending_reception=false where guest_id=4;

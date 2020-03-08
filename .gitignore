@@ -4,3 +4,4 @@ client/images/gallery
 registry_photos/
 *.log
 *.pem
+*.db
