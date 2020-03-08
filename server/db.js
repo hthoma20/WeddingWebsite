@@ -22,7 +22,7 @@ module.exports.query= function(query){
 		db.all(query, [], (err, rows) => {
 			
 			if(err){
-				console.log(err);
+				log.error(err);
 				return;
 			}
 			
@@ -35,8 +35,6 @@ module.exports.query= function(query){
 				reject(err);
 				return;
 			}
-			
-			console.log("db closed");
 		});
 	});
 }
