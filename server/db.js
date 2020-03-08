@@ -4,6 +4,11 @@ const log= require('./log').logger;
 
 
 module.exports.query= function(query){
+	
+	//preprosses the query
+	query= query.replace(/false|FALSE/g, "0");
+	query= query.replace(/true|TRUE/g, "1");
+	
 	return new Promise( (resolve, reject) => {
 		
 		let db= new sqlite3.Database('./server/Wedding.db', sqlite3.OPEN_READWRITE, (err) => {
