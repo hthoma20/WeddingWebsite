@@ -1,6 +1,19 @@
 p {
 	font-variant: normal;
-	/* line-height: 40px; */
+/* 	line-height: 40px; */
+}
+
+.guest_a {
+	font-family: 'Segan', Sans-Serif;
+	
+	font-size: 130%;
+
+	display: block;
+    
+    width: fit-content;
+
+    margin: auto;
+
 }
 
 #website_link {
@@ -24,4 +37,16 @@ p {
 
 #hotel_photo {
 	width: 30%;
+}
+
+#reservation_link {
+	color: black;
+}
+
+#reservation_link:visited {
+  color: #6d5534;
+}
+
+#reservation_link:hover {
+  color: #8a5c1d;
 }
