@@ -135,3 +135,16 @@ p {
 	margin: .5%;
 
 }
+
+.covid_update {
+	font-variant: normal;
+	font-style: italic;
+	width: 65%;
+	/* top right bottom left */
+	margin: 2.5% auto 2.5% auto;
+}
+
+.vertical_space {
+	/* top right bottom left */
+	margin: 2.5% auto 2.5% auto;
+}
