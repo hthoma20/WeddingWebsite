@@ -143,16 +143,12 @@ function removeBadColumns(group){
 	if(!hasHawaii){
 		document.getElementById('hawaii_header').style.display= 'none';
 	}
-	if(!hasPortland){
-		document.getElementById('portland_header').style.display= 'none';
-	}
 }
 
 //insert the correct data into the the given table row
 function populateMemberRow(row, member){
 	let nameCell= row.insertCell(0);
-	let ceremonyCell= row.insertCell(1);
-	let receptionCell= row.insertCell(2);
+	let receptionCell= row.insertCell(1);
 	
 	nameCell.innerHTML= `${memberName(member)}`;
 	
