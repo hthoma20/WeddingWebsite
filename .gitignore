@@ -5,3 +5,4 @@ registry_photos/
 *.log
 *.pem
 *.db
+*.sqliterc
