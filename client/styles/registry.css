@@ -18,6 +18,7 @@ a {
 	border-radius: 30px;
 	
 	width: fit-content;
+	width: -moz-fit-content;
 	
 	margin: auto;
 	

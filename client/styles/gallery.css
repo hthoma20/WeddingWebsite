@@ -5,6 +5,7 @@
 	margin: 1% auto 1% auto;
 
 	width: fit-content;
+	width: -moz-fit-content;
 }
 
 #gallery_content {

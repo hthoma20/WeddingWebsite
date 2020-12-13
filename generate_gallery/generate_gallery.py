@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import random
 
-RANDOMIZE= True
+RANDOMIZE= False
 
 def createImageTag(imageName, imageId):
     if isVertical(imageName):
@@ -32,7 +32,7 @@ def getGalleryImages():
     return imageFilesList
     
 def isImageFile(fileName):
-    endings= ['.jpg','.JPG','.png','.PNG']
+    endings= ['.jpg','.JPG', '.jpeg' ,'.png','.PNG']
     
     for ending in endings:
         if fileName.endswith(ending):
